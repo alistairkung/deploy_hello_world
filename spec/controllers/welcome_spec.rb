@@ -9,6 +9,12 @@ RSpec.describe "Welcome" do
       get "/welcome"
       expect(last_response.status).to eq 200
     end
+
+    it "returns hello world" do
+      get "/welcome"
+      message = JSON.parse(last_response.body).fetch('message')
+      expect(message).to eq "Hello World!"
+    end
   end
 end
 
