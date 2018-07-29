@@ -5,5 +5,6 @@ This is a simple app with one endpoint:
 `GET /welcome`
 
 response:
-
-`Hello World!`
+{
+  "message"=>"Hello World!"
+}
