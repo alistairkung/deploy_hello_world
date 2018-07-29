@@ -4,7 +4,7 @@ This is a simple app with one endpoint:
 
 `GET /welcome`
 
-response:
+`response:
 {
   "message"=>"Hello World!"
-}
+}`
