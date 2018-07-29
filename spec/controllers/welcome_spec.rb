@@ -13,6 +13,7 @@ RSpec.describe "Welcome" do
     it "returns hello world" do
       get "/welcome"
       message = JSON.parse(last_response.body).fetch('message')
+      p JSON.parse(last_response.body)
       expect(message).to eq "Hello World!"
     end
   end
