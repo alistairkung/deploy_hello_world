@@ -1,4 +1,4 @@
-FROM ruby:2.5-alpine
+FROM ruby:2.5.1
 
 ENV APP_PATH /opt/app
 
@@ -10,5 +10,4 @@ WORKDIR $APP_PATH
 
 RUN bundle install
 
-CMD ["rackup", "-p", "4567"]
-
+CMD ["rerun", "--background", "--", "rackup", "-p", "4567", "--host", "0.0.0.0"]

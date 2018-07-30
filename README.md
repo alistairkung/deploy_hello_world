@@ -11,12 +11,24 @@ response:
 }
 ```
 
-# How to run
+View at: http://localhost:4567/welcome
 
-In console:
+## Requirements
+
+- Ruby 2.5 >=
+- Docker. You can find more info here: https://docs.docker.com/install/linux/docker-ce/ubuntu/
+
+## Development
+
+In order to boot the up the app you need to run the following command that will
+launch the web server at http://localhost:4567:
 
 ```
-rackup -p 4567
+docker-compose up
 ```
 
-View at: https://localhost:4567/welcome
+## Test
+
+```
+docker-compose run --rm app bundle exec rspec
+```
