@@ -32,3 +32,13 @@ docker-compose up
 ```
 docker-compose run --rm app bundle exec rspec
 ```
+
+## Production
+
+- Install dependencies by running: `bundle install`
+- run:
+
+```
+    bundle exec rackup -p #chosen port
+```
+
