@@ -39,6 +39,5 @@ docker-compose run --rm app bundle exec rspec
 - run:
 
 ```
-    bundle exec rackup -p #chosen port
+    bundle exec rackup -p <port>
 ```
-
